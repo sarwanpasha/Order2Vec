@@ -1,9 +1,8 @@
-configfile : 'config.json'
-base = '/alina-data2/murray/'
+configfile : 'config.json' # the sra runs we used, by accession number
+data = '/data/' # put data here
 
-data = base + 'ncbi-sra/'
 sets = config['accs']
-reference = base + 'sars-cov-2-reference/GCA_009858895.3.fasta'
+reference = data + 'GCA_009858895.3.fasta' # place SARS-CoV-2 reference genome here
 
 time = '/usr/bin/time'
 
